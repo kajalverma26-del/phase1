@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Feedback Form</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <section>
+        <h2>Share Your Feedback</h2>
+        <p>Please fill in the form below to share your thoughts about the courses and the portal.</p>
+    </section>
+
+    <form>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        
+            <p>Gender</p>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+    
+
+        <p>
+            <label for="rating">Rate the Portal:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very Poor</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comments">Your Feedback:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="40"
+                      placeholder="Write your feedback here"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agree" name="agree" value="yes">
+            <label for="agree">I agree to submit this feedback.</label>
+        </p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Student Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
